@@ -126,13 +126,18 @@ h4 {
 
 .about {
     width: 100%;
-    padding: 100px 0px;
+    padding: 5vw 0px;
     background-color: #191919;
 }
 
-.about img {
+#pc-about {
     height: auto;
     width: 30vw;
+}
+
+#phone-about {
+    display: none;
+    
 }
 
 .about-text {
@@ -189,4 +194,69 @@ button:hover {
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1%;
+        text-align: center;
+    }
+
+    .about img {
+        height: fit-content;
+    }
+
+    .about-text h2 {
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    .about-text h5 {
+        font-size: 3.5vw;
+    }
+
+    .about-text p {
+        font-size: 2.5vw;
+        line-height: 3.5vw;
+    }
+
+    button {
+        margin-left: 0%;
+        padding: 16px 37px;
+        width: 160px;
+        font-size: 2.5vw;
+    }
+
+    #pc-about {
+        display: none;
+    }
+    
+    #phone-about {
+        height: auto;
+        width: 40vw;
+        display: inline;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        display: none;
+        text-align: center;
+    }
+
+    .newslatter form{
+        display: none;
+    }
+
+    .top{
+        background-image: url(../images/top2.png);
+    }
 }
