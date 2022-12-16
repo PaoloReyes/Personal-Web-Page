@@ -223,8 +223,8 @@ button:hover {
     }
 
     .about-text p {
-        font-size: 2.5vw;
-        line-height: 3.5vw;
+        font-size: 3vw;
+        line-height: 4vw;
     }
 
     button {
@@ -244,6 +244,10 @@ button:hover {
         display: inline;
         margin-bottom: 15px;
     }
+
+    .top{
+        background-image: url(../images/top2.png);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -257,6 +261,39 @@ button:hover {
     }
 
     .top{
-        background-image: url(../images/top2.png);
+        background-image: url(../images/top3.png);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        display: none;
+        text-align: center;
+    }
+
+    .newslatter form{
+        display: none;
+    }
+
+    .top{
+        background-image: url(../images/top3.png);
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .newslatter form{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 680px) and (max-width: 670px){
+    nav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    nav{
+        display: none;
     }
 }
