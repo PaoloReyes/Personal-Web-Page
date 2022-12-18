@@ -1,56 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <title>Paolo Reyes</title>
-</head>
-<body>
-    <!-- Inicio -->
-    <div class="top">
-        <nav>
-            <h2 class="logo">Porta<span>folio</span></h2>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <a href="#" class="btn">Youtube</a>
-        </nav>
-
-        <div class="content">
-            <h4>¡Hola! Soy</h4>
-            <h1>Paolo <span>Reyes</span></h1>
-            <h3>Ingeniero en Robótica</h3>
-            <div class="newslatter">
-                <form>
-                    <input type="text" name="info" placeholder="¿Tienes un proyecto en mente? Resúmelo">
-                    <input type="submit" name="submit" value="Enviar">
-                </form>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Paolo Reyes</title>
+        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
+    </head>    
+    <body>        
+        <!-- Inicio -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre Mi</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h4>¡Hola! Soy</h4>
+                    <h1>Paolo <span>Reyes</span></h1>
+                    <h3>Ingeniero en Robótica</h3>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Sobre mi -->
-    <section class="about">
-        <div class="main">
-            <img id="pc-about" src="https://github.com/PaoloReyes/web/blob/main/images/main.JPG?raw=true">
-            <div class="about-text">
-                <h2>Acerca de Mi</h2>
-                <img id="phone-about" src="https://github.com/PaoloReyes/web/blob/main/images/main.JPG?raw=true">
-                <h5>Robotista <span>& Programador</span></h5>
-                <p align="justify">Soy un estudiante de ingeniería en robótica y sistemas digitales en el Tecnológico de Monterrey. Actualmente fungo como mentor de diversos equipos de robótica a nivel nacional para la universidad Tecmilenio y manejo un canal de Youtube donde hago videos de temas complejos de ingeniería de manera didáctica. A lo largo de mi vida me he especializado en el área de la robótica en dónde soy capaz de elaborar robots complejos por mi cuenta incluyendo el modelado 3D, construcción, cableado y programación. Diversificarme en todas estas áreas me ha traido habilidades importantes como la especialización en diseño mecánico de sistemas robóticos, la operación de máquinas y herramientas complejas como CNC's, la construcción de sistemas digitales para aplicaciones específicas y el dominio de lenguajes de programación backend.</p>
-                <button type="button">Hablemos</button>
+        <!-- Acerca de Mi -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/paolo.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">Acerca de Mi</h1>
+                        <h5 class="subsubtitle">Robotista <span>& Programador</span></h5>
+                        <p align="justify">Soy un estudiante de ingeniería en robótica y sistemas digitales en el Tecnológico de Monterrey. Actualmente fungo como mentor de diversos equipos de robótica a nivel nacional para la universidad Tecmilenio y manejo un canal de Youtube donde hago videos de temas complejos de ingeniería de manera didáctica.<br>A lo largo de mi vida me he especializado en el área de la robótica en dónde soy capaz de elaborar robots complejos por mi cuenta incluyendo el modelado 3D, construcción, cableado y programación.<br>Diversificarme en todas estas áreas me ha traido habilidades importantes como la especialización en diseño mecánico de sistemas robóticos, la operación de máquinas y herramientas complejas como CNC's, la construcción de sistemas digitales para aplicaciones específicas y el dominio de lenguajes de programación backend.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+                            <p class="tab-links" onclick="opentab('education')">Educación</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programación Backend y Frontend</span><br>Programación HTML, CSS, JavaScript, Python, C++, Java, PHP, SQL.</li>
+                                <li><span>Diseño 3D y Simulaciones.</span><br>Manejo de Solidworks para Modelado de Sistemas Mecánicos y Simulaciones de Optimización y Resistencia.</li>
+                                <li><span>Manufactura</span><br>Operación de máquinas CNC.</li>
+                                <li><span>Electrónica</span><br>Diseño de Sistemas Digitales y Programación Eficiente de Microcontroladores</li>
+                                <li><span>Inglés</span><br>Nivel B2.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - Actualidad</span><br>Mentor de Ingeniería para 28 equipos de Robótica de México.</li>
+                                <li><span>2022 - 2022</span><br>Líder de Sistemas de Control para el equipo Mexicano de Robótica "Robociety".</li>
+                                <li><span>2018 - 2021</span><br>Líder de Ingeniería para el equipo Mexicano de Robótica "WinT 3794".</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - 2025</span><br>Ingeniería en Robótica y Sistemas Digitales en el Tecnológico de Monterrey.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-</body>
+        <!-- Servicios -->
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">Mis Servicios</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h2>Manufactura de Piezas</h2>
+                        <p align="justify">Puedo ayudarte a traer a la vida cualquier proyecto manufacturando cualquier pieza con mis máquinas CNC.</p>
+                        <a href="#">¿Quieres saber más?</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Automatización</h2>
+                        <p align="justify">Puedo ayudarte a automatizar procesos en tu empresa por medio de la creación de programas a tu medidad que puedan reducir costos como la autogestión de inventario, control de empleados, etc.</p>
+                        <a href="#">¿Quieres saber más?</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-microchip"></i>
+                        <h2>Desarrollo de Dispositivos Electrónicos</h2>
+                        <p align="justify">Puedo ayudarte a inventar cualquier dispositivo electrónico que te facilite tus actividades diarias como contadores de aforo para tu negocio, juguetes a control remoto, luces que se conecten a alexa o cualquier otro dispositivo IoT.</p>
+                        <a href="#">¿Quieres saber más?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Proyectos -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="subtitle">Mis Proyectos</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/top2.png">
+                        <div class="layer">
+                            <h3>Proyecto 1</h3>
+                            <p>Descripción</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/top2.png">
+                        <div class="layer">
+                            <h3>Proyecto 1</h3>
+                            <p>Descripción</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/top2.png">
+                        <div class="layer">
+                            <h3>Proyecto 1</h3>
+                            <p>Descripción</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Ver más</a>     
+            </div>
+        </div>
+        <!-- Contacto -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contáctame</h1>
+                        <p><i class="fas fa-paper-plane"></i>contactopaoloinspires@gmail.com</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/CV-PaoloReyes.pdf" class="btn btn2">Descargar CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Nombre" required>
+                            <input type="email" name="Email" placeholder="Correo" required>
+                            <textarea name="Message" rows="6" placeholder="Tu Mensaje"></textarea>
+                            <input class="btn btn2" type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2023 Paolo Reyes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <script>
+            let tablinks = document.getElementsByClassName("tab-links");
+            let tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (let i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.remove("active-link");
+                }
+                for (let i = 0; i < tabcontents.length; i++) {
+                    tabcontents[i].classList.remove("active-tab");
+                }
+                document.getElementById(tabname).classList.add("active-tab");
+                event.currentTarget.classList.add("active-link");
+            }
+
+            let sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0px";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+    </body>
 </html>
