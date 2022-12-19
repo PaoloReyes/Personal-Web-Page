@@ -185,18 +185,7 @@
             function closemenu() {
                 sidemenu.style.right = "-200px";
             }
-
-            const msg = document.getElementById("msg");
-            const form = document.forms["enviar"];
-
-            form.addEventListener("submit", (e) => {
-                e.preventDefault();
-                msg.innerHTML = "Mensaje Enviado con Éxito";
-                setTimeout(function(){
-                    msg.innerHTML = "";
-                }, 5000);
-                form.reset();
-            })
         </script>
+        <script src="../js/script.js"></script>
     </body>
 </html>

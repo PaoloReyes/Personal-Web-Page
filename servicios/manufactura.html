@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/style.css">
         <title>Manufactura</title>
         <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
     <body>
         <div class="header-service">
@@ -59,9 +60,9 @@
                     </div>
                     <div class="contact-right">
                         <form name="enviar">
-                            <input type="text" name="Name" placeholder="Nombre" required>
-                            <input type="email" name="Email" placeholder="Correo" required>
-                            <textarea name="Message" rows="6" placeholder="Tu Mensaje"></textarea>
+                            <input type="text" name="Name" placeholder="Nombre" required id="nombre">
+                            <input type="email" name="Email" placeholder="Correo" required id="correo_destino">
+                            <textarea name="Message" rows="6" placeholder="Tu Mensaje" id="mensaje"></textarea>
                             <input class="btn btn2" type="submit" value="Enviar">
                         </form>
                         <span id="msg"></span>
@@ -72,5 +73,6 @@
                 <p>Copyright © 2023 Paolo Reyes. Todos los derechos reservados.</p>
             </div>
         </div>
+        <script src="../js/script.js"></script>
     </body>
 </html>
