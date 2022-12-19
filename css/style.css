@@ -26,6 +26,10 @@ body {
     padding: 10px 10%;
 }
 
+.container-service {
+    padding: 0px 10%;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -407,6 +411,14 @@ form .btn2 {
     padding: 30px 30px 25px 30px;
     font-size: 25px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-service a {
+    color: #fff;
 }
 
 .service-col-1 {
@@ -430,6 +442,10 @@ form .btn2 {
 
 .instructions {
     color: #aca8a8;
+}
+
+.social-icons {
+    margin-bottom: 20px;
 }
 
 /* Responsive */
@@ -505,7 +521,26 @@ nav .fas {
 
     #contacto .row, #cotizaciones .row{
         text-align: center;
-        margin-bottom: 20px;
+    }
+
+    .service-col-1, .service-col-2 {
+        flex-basis: 100%;
+    }
+
+    .service-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .service-col-1 p {
+        color: #ababab;
+    }
+
+    .service-col-1 .subtitle {
+        text-align: center;
+    }
+
+    .header-service {
+        font-size: 20px;
     }
 }
 
@@ -535,11 +570,19 @@ nav .fas {
     .logo {
         width: 150px;
     }
+
+    .header-service {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     #inicio {
         background-image: url(../images/top3.png);
+    }
+
+    .header-service {
+        font-size: 11px;
     }
 }
 
@@ -558,5 +601,9 @@ nav .fas {
 
     .contact-left p {
         font-size: 14px;
+    }
+
+    .header-service {
+        font-size: 8px;
     }
 }
