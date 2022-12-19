@@ -1,12 +1,12 @@
-const msg = document.getElementById("msg");
-const form = document.forms["enviar"];
-
 generate();
+
+const form = document.forms["enviar"];
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let input_captcha = document.getElementById("captcha").value;
     let captcha = document.getElementById("image").innerHTML;
+    const msg = document.getElementById("msg");
     if (input_captcha == captcha) {
         const mensaje = form["mensaje"].value;
         const nombre = form["nombre"].value;
