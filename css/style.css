@@ -456,10 +456,7 @@ nav .fas {
         text-align: center;
     }
 
-    #contacto .row, #cotizaciones .row{
-        text-align: center;
-        margin-bottom: 20px;
-    }
+    
 }
 
 @media only screen and (max-width: 1025px) {
@@ -504,6 +501,11 @@ nav .fas {
 
     .about-col-2 .subsubtitle, .subtitle {
         text-align: center;
+    }
+
+    #contacto .row, #cotizaciones .row{
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
 
