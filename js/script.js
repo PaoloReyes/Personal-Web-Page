@@ -1,6 +1,8 @@
 const msg = document.getElementById("msg");
 const form = document.forms["enviar"];
 
+generate();
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let input_captcha = document.getElementById("captcha").value;
