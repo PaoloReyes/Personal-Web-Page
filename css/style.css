@@ -455,6 +455,10 @@ nav .fas {
     #contact .row {
         text-align: center;
     }
+
+    #contacto .row, #cotizaciones .row{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 1025px) {
