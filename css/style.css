@@ -388,7 +388,6 @@ form .btn2 {
 }
 
 #msg {
-    color: #61b752;
     margin-top: -30px;
     display: block;
     margin-left: 15px;
@@ -448,6 +447,37 @@ form .btn2 {
     margin-bottom: 20px;
 }
 
+
+#image{
+    margin-left: 15px;
+    width: 125px;
+    font-weight: 400;
+    height: 35px;
+    user-select: none;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: 20px;
+    border: #ff004f 2px solid;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.captcha {
+    margin-left: 15px;
+    display: inline-flex;
+}
+
+.reload {
+    padding-top: 6px;
+    color: #fff;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.reload:active {
+    color: #ff004f;
+}
+
 /* Responsive */
 nav .fas {
     display: none;
@@ -459,7 +489,7 @@ nav .fas {
     }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1160px) {
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
@@ -605,5 +635,29 @@ nav .fas {
 
     .header-service {
         font-size: 8px;
+    }
+
+    .header-service i {
+        font-size: 10px ;
+    }
+
+    #image {
+        font-size: 16px;
+        width: 80px;
+        height: 28px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .subsubtitle {
+        font-size: 14px;
+    }
+
+    #image {
+        font-size: 14px;
+        width: 70px;
+        height: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

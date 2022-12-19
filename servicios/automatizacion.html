@@ -9,7 +9,7 @@
         <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
-    <body>
+    <body onload="generate()">
         <div class="header-service">
             <a href="https://paoloreyes.github.io/web/#servicios"><i class="fa-solid fa-angles-left"></i></a>
             <h2>Servicio de Automatización</h2>
@@ -63,6 +63,12 @@
                             <input type="text" name="Name" placeholder="Nombre" required id="nombre">
                             <input type="email" name="Email" placeholder="Correo" required id="correo_destino">
                             <textarea name="Message" rows="6" placeholder="Tu Mensaje" id="mensaje"></textarea>
+                            <div class="captcha">
+                                <h2 class="subsubtitle">CAPTCHA: </h2>
+                                <div id="image" class="inline" selectable="False"></div>
+                                <i class="fa-solid fa-arrows-rotate reload" onclick="generate()"></i>
+                            </div>
+                            <input type="text" id="captcha" placeholder="Captcha">
                             <input class="btn btn2" type="submit" value="Enviar">
                         </form>
                         <span id="msg"></span>
