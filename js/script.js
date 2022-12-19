@@ -2,7 +2,7 @@ generate();
 
 const form = document.forms["enviar"];
 
-const topico = "";
+let topico = "";
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
