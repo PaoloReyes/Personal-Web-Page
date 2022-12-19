@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desarrollo</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Desarrollo</title>
+        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </head>
+    <body>
+        <div class="header-service">
+            <a href="https://paoloreyes.github.io/web/"><i class="fa-solid fa-angles-left"></i></a>
+            <h2>Servicio de Desarrollo Electrónico</h2>
+            <span></span>
+        </div>
+        <div id="Que_Hacemos">
+            <div class="container-service">
+                <div class="row first-section-service">
+                    <div class="service-col-1">
+                        <h1 class="subtitle">¿Qué Hacemos?</h1>
+                        <p align="justify">Creamos dispositivos a la medida de los usuarios que puedan desempeñar tareas especificas en su vida diaria y en sus negocios, estos dispositivos principalmente involucran el uso de sensores para facilitar el control de otros sistemas, hacer tareas de automatización o incluso reducir el número de trabajadores necesarios.</p>
+                    </div>
+                    <div class="service-col-2">
+                        <img src="../images/raspberry.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ejemplos">
+            <div class="container">
+                <h1 class="subtitle">Algunos Ejemplos</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="../images/desarrollo_example_1.png">
+                    </div>
+                    <div class="work">
+                        <img src="../images/desarrollo_example_2.png">
+                    </div>
+                    <div class="work">
+                        <img src="../images/desarrollo_example_3.png">
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div id="cotizaciones">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Cotizaciones</h1>
+                        <p align="justify" class="instructions">Por favor comunícate por alguno de estos medios o dejando tu mensaje en la parte de la derecha y yo me pondré en contacto contigo en un lapso menor a 24 horas para hablar sobre tu proyecto.</p>
+                        <p><i class="fas fa-paper-plane"></i>contactopaoloinspires@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/paolo.reyes.3114935" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/@Paoloreyes" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/yosoypaoloxd/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/paolo-alfonso-reyes-ramirez-663695200/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="enviar">
+                            <input type="text" name="Name" placeholder="Nombre" required id="nombre">
+                            <input type="email" name="Email" placeholder="Correo" required id="correo_destino">
+                            <textarea name="Message" rows="6" placeholder="Tu Mensaje" id="mensaje"></textarea>
+                            <input class="btn btn2" type="submit" value="Enviar">
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2023 Paolo Reyes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        <script src="../js/script.js"></script>
+    </body>
 </html>
