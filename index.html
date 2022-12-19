@@ -10,16 +10,16 @@
     </head>    
     <body>        
         <!-- Inicio -->
-        <div id="header">
+        <div id="inicio">
             <div class="container">
                 <nav>
                     <img src="images/logo.png" class="logo">
                     <ul id="sidemenu">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Sobre Mi</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre_mi">Sobre Mi</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                         <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
                     <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -32,7 +32,7 @@
             </div>
         </div>
         <!-- Acerca de Mi -->
-        <div id="about">
+        <div id="sobre_mi">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
@@ -73,7 +73,7 @@
             </div>
         </div>
         <!-- Servicios -->
-        <div id="services">
+        <div id="servicios">
             <div class="container">
                 <h1 class="subtitle">Mis Servicios</h1>
                 <div class="services-list">
@@ -81,25 +81,25 @@
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                         <h2>Manufactura de Piezas</h2>
                         <p align="justify">Puedo ayudarte a traer a la vida cualquier proyecto manufacturando cualquier pieza con mis máquinas CNC.</p>
-                        <a href="#">¿Quieres saber más?</a>
+                        <a href="/servicios/manufactura.html">¿Quieres saber más?</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-code"></i>
                         <h2>Automatización</h2>
                         <p align="justify">Puedo ayudarte a automatizar procesos en tu empresa por medio de la creación de programas a tu medidad que puedan reducir costos como la autogestión de inventario, control de empleados, etc.</p>
-                        <a href="#">¿Quieres saber más?</a>
+                        <a href="/servicios/automatización.html">¿Quieres saber más?</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-microchip"></i>
                         <h2>Desarrollo de Dispositivos Electrónicos</h2>
                         <p align="justify">Puedo ayudarte a inventar cualquier dispositivo electrónico que te facilite tus actividades diarias como contadores de aforo para tu negocio, juguetes a control remoto, luces que se conecten a alexa o cualquier otro dispositivo IoT.</p>
-                        <a href="#">¿Quieres saber más?</a>
+                        <a href="/servicios/desarrollo.html">¿Quieres saber más?</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Proyectos -->
-        <div id="projects">
+        <div id="proyectos">
             <div class="container">
                 <h1 class="subtitle">Mis Proyectos</h1>
                 <div class="work-list">
@@ -132,7 +132,7 @@
             </div>
         </div>
         <!-- Contacto -->
-        <div id="contact">
+        <div id="contacto">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
@@ -147,12 +147,13 @@
                         <a href="images/CV-PaoloReyes.pdf" class="btn btn2">Descargar CV</a>
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name="enviar">
                             <input type="text" name="Name" placeholder="Nombre" required>
                             <input type="email" name="Email" placeholder="Correo" required>
                             <textarea name="Message" rows="6" placeholder="Tu Mensaje"></textarea>
                             <input class="btn btn2" type="submit" value="Enviar">
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
@@ -184,6 +185,18 @@
             function closemenu() {
                 sidemenu.style.right = "-200px";
             }
+
+            const msg = document.getElementById("msg");
+            const form = document.forms["enviar"];
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                msg.innerHTML = "Mensaje Enviado con Éxito";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
         </script>
     </body>
 </html>

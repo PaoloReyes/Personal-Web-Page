@@ -5,12 +5,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #080808;
     color: #ffffff;
 }
 
-#header {
+#inicio {
     width: 100%;
     height: 100vh;
     background-image: url(../images/top.png);
@@ -88,7 +92,7 @@ nav ul li a:hover::after {
 
 /* Acerca de */
 
-#about {
+#sobre_mi {
     padding: 80px 0 30px;
     color: #ababab;
 }
@@ -379,6 +383,13 @@ form .btn2 {
     margin-left: 15px;
 }
 
+#msg {
+    color: #61b752;
+    margin-top: -30px;
+    display: block;
+    margin-left: 15px;
+}
+
 /* Footer */
 .copyright {
     width: 100%;
@@ -389,13 +400,45 @@ form .btn2 {
     margin-top: 20px;
 }
 
+/* Servicios Profundo */
+.header-service {
+    text-align: center;
+    background: #ff004f;
+    padding: 30px 30px 25px 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.service-col-1 {
+    flex-basis: 50%;
+}
+
+.service-col-2 img {
+    width : 100%;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.service-col-2 {
+    flex-basis: 45%;
+}
+
+.first-section-service {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.instructions {
+    color: #aca8a8;
+}
+
 /* Responsive */
 nav .fas {
     display: none;
 }
 
 @media only screen and (max-width: 1200px) {
-    #header {
+    #inicio {
         background-image: url(../images/top2.png);
     }
 }
@@ -488,7 +531,7 @@ nav .fas {
 }
 
 @media only screen and (max-width: 600px) {
-    #header {
+    #inicio {
         background-image: url(../images/top3.png);
     }
 }
