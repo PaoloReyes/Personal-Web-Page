@@ -139,10 +139,10 @@
                         <h1 class="subtitle">Contáctame</h1>
                         <p><i class="fas fa-paper-plane"></i>contactopaoloinspires@gmail.com</p>
                         <div class="social-icons">
-                            <a href=""><i class="fab fa-facebook"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/paolo.reyes.3114935" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/@Paoloreyes" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/yosoypaoloxd/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/paolo-alfonso-reyes-ramirez-663695200/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                         <a href="images/CV-PaoloReyes.pdf" class="btn btn2">Descargar CV</a>
                     </div>
@@ -151,6 +151,12 @@
                             <input type="text" name="Name" placeholder="Nombre" required>
                             <input type="email" name="Email" placeholder="Correo" required>
                             <textarea name="Message" rows="6" placeholder="Tu Mensaje"></textarea>
+                            <div class="captcha">
+                                <h2 class="subsubtitle">CAPTCHA: </h2>
+                                <div id="image" class="inline" selectable="False"></div>
+                                <i class="fa-solid fa-arrows-rotate reload" onclick="generate()"></i>
+                            </div>
+                            <input type="text" id="captcha" placeholder="Captcha">
                             <input class="btn btn2" type="submit" value="Enviar">
                         </form>
                         <span id="msg"></span>
