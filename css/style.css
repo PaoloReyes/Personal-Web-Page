@@ -624,6 +624,10 @@ nav .fas {
     .header-service {
         font-size: 11px;
     }
+
+    .header-service i {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -645,10 +649,6 @@ nav .fas {
 
     .header-service {
         font-size: 8px;
-    }
-
-    .header-service i {
-        font-size: 10px ;
     }
 
     #image {
