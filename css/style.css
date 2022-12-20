@@ -133,6 +133,7 @@ nav ul li a:hover::after {
 .tab-titles {
     display: flex;
     margin: 20px 0 20px;
+    color: #ffffff;
 }
 
 .tab-links{
@@ -620,7 +621,7 @@ nav .fas {
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
     .subtitle {
         font-size: 30px;
     }
