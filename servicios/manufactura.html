@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="contact-right">
-                        <form name="enviar">
+                        <form name="enviar" method="post">
                             <input type="text" name="Name" placeholder="Nombre" required id="nombre">
                             <input type="email" name="Email" placeholder="Correo" required id="correo_destino">
                             <textarea name="Message" rows="6" placeholder="Tu Mensaje" required id="mensaje"></textarea>
@@ -69,7 +69,7 @@
                                 <i class="fa-solid fa-arrows-rotate reload" onclick="generate()"></i>
                             </div>
                             <input type="text" id="captcha" placeholder="Captcha">
-                            <input class="btn btn2" type="submit" value="Enviar">
+                            <button type="button" class="btn btn2" onclick="send_mail()">Enviar</button>
                         </form>
                         <span id="msg"></span>
                     </div>

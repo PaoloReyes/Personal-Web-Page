@@ -1,11 +1,8 @@
 generate();
 
-const form = document.forms["enviar"];
-
-const topico = document.getElementById("topico").innerHTML;
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+function send_mail() {
+    const form = document.forms["enviar"];
+    const topico = document.getElementById("topico").innerHTML;
     let input_captcha = document.getElementById("captcha").value;
     let captcha = document.getElementById("image").innerHTML;
     const msg = document.getElementById("msg");
@@ -35,7 +32,7 @@ form.addEventListener("submit", (e) => {
             msg.innerHTML = "";
         }, 5000);
     }
-})
+}
 
 const year = 2023;
 document.getElementById("footer-text").innerHTML = "Copyright © " + year + " Paolo Reyes. Todos los derechos reservados.";
