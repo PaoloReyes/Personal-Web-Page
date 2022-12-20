@@ -37,6 +37,9 @@ form.addEventListener("submit", (e) => {
     }
 })
 
+const year = 2023;
+document.getElementById("footer-text").innerHTML = "Copyright © " + year + " Paolo Reyes. Todos los derechos reservados.";
+
 function generate() {
     let captcha = document.getElementById("image");
 
