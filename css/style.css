@@ -308,6 +308,8 @@ nav ul li a:hover::after {
 .btn {
     display: block;
     margin: 50px auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     border: 1px solid #ff004f;
     padding: 14px 50px;
@@ -454,7 +456,10 @@ form .btn2 {
     width: 125px;
     font-weight: 400;
     height: 35px;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     text-decoration: line-through;
     font-style: italic;
     font-size: 20px;
