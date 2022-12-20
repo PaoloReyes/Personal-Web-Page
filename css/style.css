@@ -478,6 +478,10 @@ form .btn2 {
     color: #ff004f;
 }
 
+#topico {
+    display: none;
+}
+
 /* Responsive */
 nav .fas {
     display: none;
