@@ -407,7 +407,7 @@ form .btn2 {
 }
 
 /* Servicios Profundo */
-.header-service {
+.header-subpage {
     text-align: center;
     background: #ff004f;
     padding: 30px 30px 25px 30px;
@@ -419,25 +419,25 @@ form .btn2 {
     flex-wrap: wrap;
 }
 
-.header-service a {
+.header-subpage a {
     color: #fff;
 }
 
-.service-col-1 {
+.subpage-col-1 {
     flex-basis: 50%;
 }
 
-.service-col-2 img {
+.subpage-col-2 img {
     width : 100%;
     border-radius: 15px;
     text-align: left;
 }
 
-.service-col-2 {
+.subpage-col-2 {
     flex-basis: 45%;
 }
 
-.first-section-service {
+.first-section-subpage {
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -486,6 +486,10 @@ form .btn2 {
 
 #topico {
     display: none;
+}
+
+.subpage-col-1 {
+    color: #aca8a8  ;
 }
 
 /* Responsive */
@@ -563,23 +567,23 @@ nav .fas {
         text-align: center;
     }
 
-    .service-col-1, .service-col-2 {
+    .subpage-col-1, .subpage-col-2 {
         flex-basis: 100%;
     }
 
-    .service-col-1 {
+    .subpage-col-1 {
         margin-bottom: 30px;
     }
 
-    .service-col-1 p {
+    .subpage-col-1 p {
         color: #ababab;
     }
 
-    .service-col-1 .subtitle {
+    .subpage-col-1 .subtitle {
         text-align: center;
     }
 
-    .header-service {
+    .header-subpage {
         font-size: 20px;
     }
 }
@@ -611,7 +615,7 @@ nav .fas {
         width: 150px;
     }
 
-    .header-service {
+    .header-subpage {
         font-size: 17px;
     }
 }
@@ -621,11 +625,11 @@ nav .fas {
         background-image: url(../images/top3.png);
     }
 
-    .header-service {
+    .header-subpage {
         font-size: 11px;
     }
 
-    .header-service i {
+    .header-subpage i {
         font-size: 15px;
     }
 }
@@ -647,7 +651,7 @@ nav .fas {
         font-size: 14px;
     }
 
-    .header-service {
+    .header-subpage {
         font-size: 8px;
     }
 
