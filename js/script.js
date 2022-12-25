@@ -39,14 +39,15 @@ document.getElementById("footer-text").innerHTML = "Copyright © " + year + " Pa
 
 function generate() {
     let captcha = document.getElementById("image");
+    if (captcha != null) {
+        let uniquechar = "";
+        const randomchar = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz0123456789";
 
-    let uniquechar = "";
-    const randomchar = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz0123456789";
+        for (let i = 0; i < 5; i++) {
+            uniquechar += randomchar.charAt(
+                Math.random() * randomchar.length)
+        }
 
-    for (let i = 0; i < 5; i++) {
-        uniquechar += randomchar.charAt(
-            Math.random() * randomchar.length)
+        captcha.innerHTML = uniquechar;
     }
-
-    captcha.innerHTML = uniquechar;
 }
