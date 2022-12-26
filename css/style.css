@@ -341,6 +341,7 @@ nav ul li a:hover::after {
 /* Contacto */
 .contact-left {
     flex-basis: 35%;
+    margin-right: 30px;
 }
 
 .contact-right {
@@ -390,7 +391,7 @@ form input, form textarea {
     outline: none;
     background: #262626;
     padding: 15px;
-    margin: 15px;
+    margin: 15px 15px 15px 0px;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
@@ -402,13 +403,11 @@ form .btn2 {
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-    margin-left: 15px;
 }
 
 #msg {
     margin-top: -30px;
     display: block;
-    margin-left: 15px;
 }
 
 /* Footer */
@@ -470,7 +469,6 @@ form .btn2 {
 }
 
 .captcha {
-    margin-left: 15px;
     display: inline-flex;
 }
 
@@ -558,13 +556,13 @@ nav .fas {
     }
 }
 
-@media only screen and (max-width: 1160px) {
+@media only screen and (max-width: 1250px) {
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
-    
-    .contact-right {
-        margin-right: 30px;
+
+    .contact-left, .contact-right {
+        margin: 0;
     }
 
     #contact .row {
