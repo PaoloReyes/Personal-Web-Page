@@ -499,16 +499,16 @@ form .btn2 {
     display: none;
 }
 
-.description {
+.description, .small-description {
     margin-top: 35px;
     color: #aca8a8;
     line-height: 23px;
 }
 
-.small-description {
-    margin-top: 35px;
-    color: #aca8a8;
-    line-height: 23px;
+.description a, .small-description a {
+    color: rgb(0, 200, 255); 
+    cursor: pointer; 
+    text-decoration: underline;
 }
 
 .description img:first-child {
