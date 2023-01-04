@@ -558,40 +558,76 @@ form .btn2 {
 }
 
 /* Selector */
-.selection {
+.select-box {
     display: flex;
-    justify-content: right;
+    width: 180px;
+    flex-direction: column;
     position: relative;
-    height: 50px;
+    left: 10%;
+    margin-bottom: -45px;
 }
 
-.selection label {
-    font-size: 20px;
-    margin-right: 7px;
-}
-
-.selector {
-    border: 2px solid white;
-    appearance: none;
-    padding: 5px 30px 5px 5px;
-    width: auto;
-    border-radius: 5px;
+.select-box .options-container {
     background: #ff004f;
-    font-size: 20px;
-    color: #fff;
+    color: #ffffff;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
 }
 
-.selection i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.selected {
+    background: #ff004f;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    position: relative;
+    order: 0;
+}
+
+
+.selected::after {
+    content: "";
+    background: url(../images/arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    right: 10%;
-    top: 38%;
-    padding-right: 10px;
-    pointer-events: none;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+    transition: all 0.4s;
 }
 
+.select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+}
+
+.select-box .options-container.active + .selected::after {
+    transform: rotate(180deg);
+    top: -4px;
+}
+
+.select-box .option, .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.select-box .option:hover {
+    background: #fc686f;
+}
+
+.select-box label {
+    cursor: pointer;
+}
+
+.select-box .option .radio {
+    display: none;
+}
 /* Responsive */
 nav .fas {
     display: none;
@@ -729,12 +765,14 @@ nav .fas {
         font-size: 17px;
     }
 
-    .selection label, .selector {
-        font-size: 16px;
+    .select-box {
+        width: 160px;
+        font-size: 14px;
     }
 
-    .selection i {
-        top: 35%;
+    .select-box .option, .selected {
+        padding: 12px 20px;
+        cursor: pointer;
     }
 }
 
@@ -761,12 +799,23 @@ nav .fas {
         margin-right: auto;
     }
 
-    .selection label, .selector {
-        font-size: 14px;
+    .select-box {
+        width: 130px;
+        font-size: 12px;
     }
 
-    .selection i {
-        top: 32%;
+    .select-box .option, .selected {
+        padding: 12px 14px;
+    }
+
+    .selected::after {
+        right: 5px;
+        top: 3px;
+        scale: 0.8;
+    }
+
+    .select-box .options-container.active + .selected::after {
+        top: -1px;
     }
 }
 
@@ -797,12 +846,18 @@ nav .fas {
         height: 28px;
     }
 
-    .selection label, .selector {
-        font-size: 12px;
+    .select-box {
+        width: 110px;
+        font-size: 10px;
     }
 
-    .selection i {
-        top: 30%;
+    .select-box .option, .selected {
+        padding: 10px 10px;
+    }
+
+    .selected::after {
+        right: 5px;
+        top: 0px;
     }
 }
 

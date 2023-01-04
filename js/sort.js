@@ -1,13 +1,15 @@
-function sort() {
-   
-}
+const selected = document.querySelector('.selected');
+const optionsContainer = document.querySelector('.options-container');
 
-extend()
+const optionsList = document.querySelectorAll('.option');
 
-function extend() {
-    if (document.getElementById("select-container").style.margin[8] === "-") {
-        document.getElementById("select-container").style.margin = "0 0 45px 0";
-    } else  {
-        document.getElementById("select-container").style.margin = "0 0 -45px 0";
-    }
-}
+selected.addEventListener('click', () => {
+    optionsContainer.classList.toggle('active');
+});
+
+optionsList.forEach(o => {
+    o.addEventListener('click', () => {
+        selected.innerHTML = o.querySelector('label').innerHTML;
+        optionsContainer.classList.remove('active');
+    });
+});

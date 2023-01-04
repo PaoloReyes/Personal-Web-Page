@@ -15,15 +15,23 @@
             <h2>Mis Proyectos</h2>
             <span></span>
         </div>
-        <div class="selection" id="select-container">
-            <div class="container">
-                <label>Orden:</label>
-                <select class="selector" onchange="sort()" onclick="extend()">
-                    <option value="Mas Reciente">Mas Reciente</option>
-                    <option value="Mas Antiguo">Mas Antiguo</option>
-                    <option value="A-Z">A-Z</option>
-                </select>
-                <i class="fa-solid fa-caret-down"></i>
+        <div id="select-container">
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="MasReciente" name="category">
+                        <label for="MasReciente">Mas Reciente</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="MasAntiguo" name="category">
+                        <label for="MasAntiguo">Mas Antiguo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="A-Z" name="category">
+                        <label for="A-Z">A-Z</label>
+                    </div>
+                </div>
+                <div class="selected">Mas Reciente</div>
             </div>
         </div>
         <div class="container">
