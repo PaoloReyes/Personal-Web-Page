@@ -557,6 +557,41 @@ form .btn2 {
     display: block; 
 }
 
+/* Selector */
+.selection {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    height: 50px;
+}
+
+.selection label {
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.selector {
+    border: 2px solid white;
+    appearance: none;
+    padding: 5px 30px 5px 5px;
+    width: auto;
+    border-radius: 5px;
+    background: #ff004f;
+    font-size: 20px;
+    color: #fff;
+}
+
+.selection i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+    top: 38%;
+    padding-right: 10px;
+    pointer-events: none;
+}
+
 /* Responsive */
 nav .fas {
     display: none;
@@ -693,6 +728,14 @@ nav .fas {
     .header-subpage {
         font-size: 17px;
     }
+
+    .selection label, .selector {
+        font-size: 16px;
+    }
+
+    .selection i {
+        top: 35%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -716,6 +759,14 @@ nav .fas {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .selection label, .selector {
+        font-size: 14px;
+    }
+
+    .selection i {
+        top: 32%;
     }
 }
 
@@ -745,6 +796,14 @@ nav .fas {
         width: 80px;
         height: 28px;
     }
+
+    .selection label, .selector {
+        font-size: 12px;
+    }
+
+    .selection i {
+        top: 30%;
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -758,5 +817,13 @@ nav .fas {
         height: 24px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .selection label, .selector {
+        font-size: 10px;
+    }
+
+    .selection i {
+        top: 27%;
     }
 }
