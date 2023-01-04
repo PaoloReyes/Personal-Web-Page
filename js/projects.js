@@ -1,11 +1,5 @@
 let projects = document.getElementById("workplace");
 
-let projects_name_a_z = ['aerodesign', 'anet-autolevel', 'anetA8-plotter', 'bazoobed', 'biblioteca', 'cafeteria', 'curso-arduino', 'cursos-tec', 'dif-lego', 'e-bike', 'e-gokart', 'eggcnc', 'estabilizador', 'evolution-up', 'filtros-3D', 'first-2019-1', 'first-2019-2', 'first-2020-1', 'first-2020-2', 'first-2021-1', 'first-2021-2', 'first-2021-3', 'first-2022', 'first-nacional', 'fundacion-plan', 'huerto-iot', 'iron-man', 'kenia', 'mano-robotica', 'oci-2015', 'paolo-inspires', 'plotter-cnc', 'programacion-competitiva', 'regata', 'resolvedor-rubiks', 'rlc', 'robociety', 'robot-diferencial', 'roc', 'router-cnc', 'silla-de-ruedas', 'skeleton-tracking', 'strange-robot']
-
-let projects_name_antiguo = ['oci-2015', 'first-2019-1', 'first-2019-2', 'kenia', 'e-gokart', 'first-2020-1', 'silla-de-ruedas', 'first-2020-2', 'filtros-3D', 'bazoobed', 'resolvedor-rubiks', 'roc', 'eggcnc', 'first-2021-1', 'plotter-cnc', 'first-2021-2', 'skeleton-tracking', 'mano-robotica', 'robot-diferencial', 'first-2021-3', 'curso-arduino', 'strange-robot', 'rlc', 'anet-autolevel', 'anetA8-plotter', 'estabilizador', 'evolution-up', 'router-cnc', 'aerodesign', 'e-bike', 'iron-man', 'first-2022', 'biblioteca', 'fundacion-plan', 'dif-lego', 'cafeteria', 'cursos-tec', 'paolo-inspires', 'programacion-competitiva', 'regata', 'robociety', 'huerto-iot', 'first-nacional']
-
-let projects_name_reciente = ['first-nacional', 'huerto-iot', 'robociety', 'regata', 'programacion-competitiva', 'paolo-inspires', 'cursos-tec', 'cafeteria', 'dif-lego', 'fundacion-plan', 'biblioteca', 'first-2022', 'iron-man', 'e-bike', 'aerodesign', 'router-cnc', 'evolution-up', 'estabilizador', 'anetA8-plotter', 'anet-autolevel', 'rlc', 'strange-robot', 'curso-arduino', 'first-2021-3', 'robot-diferencial', 'mano-robotica', 'skeleton-tracking', 'first-2021-2', 'plotter-cnc', 'first-2021-1', 'eggcnc', 'roc', 'resolvedor-rubiks', 'bazoobed', 'filtros-3D', 'first-2020-2', 'silla-de-ruedas', 'first-2020-1', 'e-gokart', 'kenia', 'first-2019-2', 'first-2019-1', 'oci-2015']
-
 for (let project_name of projects_name_reciente) {
   projects.innerHTML += '<div class="work"><a href="./proyectos/'+project_name+'.html"><img style="cursor: pointer;" src="images/'+project_name+'_profile.jpg"></a></div>'
 }
