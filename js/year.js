@@ -1,2 +1,2 @@
 const year = new Date().getFullYear();
-document.getElementById("footer-text").innerHTML = "Copyright © " + year + " Paolo Reyes. Todos los derechos reservados.";
+document.getElementById("footer-text").innerHTML = "© 2022 - " + year + " Paolo Reyes.";

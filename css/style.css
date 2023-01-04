@@ -568,7 +568,7 @@ form .btn2 {
 }
 
 .select-box .options-container {
-    background: #ff004f;
+    background: #2b00ff;
     color: #ffffff;
     max-height: 0;
     width: 100%;
@@ -580,7 +580,7 @@ form .btn2 {
 }
 
 .selected {
-    background: #ff004f;
+    background: #2b00ff;
     border-radius: 8px;
     margin-bottom: 8px;
     color: #ffffff;
@@ -618,7 +618,7 @@ form .btn2 {
 }
 
 .select-box .option:hover {
-    background: #fc686f;
+    background: #9690ff;
 }
 
 .select-box label {
