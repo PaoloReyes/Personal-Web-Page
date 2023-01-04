@@ -563,7 +563,7 @@ form .btn2 {
     width: 180px;
     flex-direction: column;
     position: relative;
-    left: 10%;
+    left: calc(90% - 180px);
     margin-bottom: -45px;
 }
 
@@ -768,6 +768,7 @@ nav .fas {
     .select-box {
         width: 160px;
         font-size: 14px;
+        left: calc(90% - 160px);
     }
 
     .select-box .option, .selected {
@@ -802,6 +803,7 @@ nav .fas {
     .select-box {
         width: 130px;
         font-size: 12px;
+        left: calc(90% - 130px);
     }
 
     .select-box .option, .selected {
@@ -849,6 +851,7 @@ nav .fas {
     .select-box {
         width: 110px;
         font-size: 10px;
+        left: calc(90% - 110px);
     }
 
     .select-box .option, .selected {
