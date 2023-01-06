@@ -262,6 +262,28 @@ nav ul li a:hover::after {
     margin-bottom: 50px;
 }
 
+.work-container {
+    border-radius: 10px;
+    border: 3px solid #ff004f;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-container h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.work-container p {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    font-size: 0.8vw;
+}
+
 .work {
     border-radius: 10px;
     position: relative;
@@ -633,6 +655,16 @@ nav .fas {
     display: none;
 }
 
+@media only screen and (max-width: 1575px) {
+    .work-container h1 {
+        font-size: 1.25vw;
+    }
+
+    .work-container p {
+        font-size: 1vw;
+    }
+}
+
 @media only screen and (max-width: 1250px) {
     .contact-left, .contact-right {
         flex-basis: 100%;
@@ -648,6 +680,14 @@ nav .fas {
 
     .contact-right {
         text-align: center;
+    }
+
+    .work-container h1 {
+        font-size: 1.6vw;
+    }
+
+    .work-container p {
+        font-size: 1.2vw;
     }
 }
 
@@ -731,6 +771,14 @@ nav .fas {
 
     .header-subpage {
         font-size: 20px;
+    }
+
+    .work-container h1 {
+        font-size: 2.5vw;
+    }
+
+    .work-container p {
+        font-size: 1.8vw;
     }
 }
 
@@ -818,6 +866,14 @@ nav .fas {
 
     .select-box .options-container.active + .selected::after {
         top: -1px;
+    }
+
+    .work-container h1 {
+        font-size: 3.5vw;
+    }
+
+    .work-container p {
+        font-size: 2.8vw;
     }
 }
 
