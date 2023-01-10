@@ -533,6 +533,10 @@ form .btn2 {
     text-decoration: underline;
 }
 
+.description p, .small-description p {
+    text-align: justify;
+}
+
 .description img:first-child {
     width: 40%;
     float: right;
@@ -547,22 +551,18 @@ form .btn2 {
     margin-left: 60px;
 }
 
-.description img:last-child {
+.description img:last-child, .small-description img:last-child{
     display: none;
 }
 
-.small-description img:last-child{
-    display: none;
-}
-
-.description li {
+.description li, .small-description li {
     margin-top: 5px;
     margin-left: 15px;
 }
 
-.small-description li{
-    margin-top: 5px;
-    margin-left: 15px;
+.description ul, .small-description ul {
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 .description:after{

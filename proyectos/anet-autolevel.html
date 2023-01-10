@@ -1,4 +1,5 @@
 <!--19/06/2021-->
+<!--Este proyecto busca mejorar la impresora 3D más barata del mercado dándole la capacidad de tener una nivelación automática y que no necesite ser calibrada antes de cada impresión.-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -19,7 +20,16 @@
                     <h1 class="subtitle">¿De que trata?</h1>
                     <div class="description">
                         <img src="../images/anet-autolevel_profile.jpg">
-                        <p align="justify"></p>
+                        <p>La Anet-A8 es o al menos era la impresora 3D más barata del mercado en abril del 2020 cuando la adquirí por un precio no mayor a 3600 pesos mexicanos, por su bajo costo es evidente que carece de muchas de las características premium de otras impresoras, entre ellas está la nivelación automática que por medio de un sensor de distancia permite conocer la altura de la cama en todos sus puntos y de esa manera es capaz de imprimir en condiciones más adversas como en superficies inclinadas.</p><br><p>La ventaja de tener una nivelación automática es que podemos imprimir por más tiempo sin tener que recalibrar la cama caliente que es un proceso que toma tiempo importante, por ello consideré significativo implementar esta característica en mi impresora adaptando el hardware existente. El proceso consistió de una serie de sencillos pasos y fue documentado en un video para mi canal de youtube que se puede encontrar en el siguiente <a href="https://www.youtube.com/watch?v=YItKc0Y6AW0">enlace.</a></p><br><p>De cualquier forma en la siguiente lista resumo el proceso de implementación:</p>
+                        <ul>
+                            <li>Desoldar limit switch del eje z.</li>
+                            <li>Soldar sensor inductivo en el lugar del limit switch.</li>
+                            <li>Modificar el firmware de la impresora para que acepte el comando de nivelación automática.</li>
+                            <li>Cubrir la superficie de impresión de un material conductor.</li>
+                            <li>Crear un perfil de impresión con la opción de nivelación automática.</li>
+                            <li>Comenzar a imprimir.</li>
+                        </ul>
+                        <p>Después de llevar a cabo ese proceso tuve como ventajas no tener que volver a calibrar la impresora en más de 6 meses de uso continuo manteniendo una alta calidad de impresión en mis piezas.</p>
                         <img src="../images/anet-autolevel_profile.jpg">
                     </div>
                 </div>
