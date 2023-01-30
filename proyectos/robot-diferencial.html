@@ -1,4 +1,5 @@
 <!--15/12/2020-->
+<!--Un robot muy básico usado para estudiar conceptos de control y seguimiento de trayectorías.-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -19,7 +20,9 @@
                     <h1 class="subtitle">¿De que trata?</h1>
                     <div class="description">
                         <img src="../images/robot-diferencial_profile.jpg">
-                        <p align="justify"></p>
+                        <p>Este fue un robot que construí en pandemia para aprender conceptos de contol y seguimiento de trayectorias, mecanicamente es un robot muy sencillo ya que solo consiste de dos motores y una rueda loca para navegar por el espacio por medio de 4 únicos movimientos (Avanzar, Retroceder, Rotar en sentido de las manecillas del reloj y Rotar en el sentido opuesto a las manecillas del reloj), incluso podría decir que este es el robot más básico que cualquier persona que se introduce por primera vez a la robótica tiene acceso.</p><br>
+                        <p>La diferencia entre un robot muy básico y lo que yo hice es inmensa, ya que este solo sirvió como estructura pero el verdadero proyecto tenía más que ver con matemáticas y programación que directamente con el robot.</p><br>
+                        <p>La idea era colocar encoders en las ruedas del robot para determinar la velocidad angular de cada llanta en cada ciclo de ejecución del código, con este dato usar el método de integración numérica de euler debido al poco poder de procesamiento que tiene un arduino uno para obtener una aproximación a la posición relativa desde el inicio del robot y poder corregir el error en la posición para una trayectoria dada en el tiempo, de esa forma solo me hacía falta dar un vector con [la velocidad angular, la velocidad lineal, y el tiempo de duración de esa configuración] para trazar una curva en el tiempo, posteriormente podía mezclar estos vectores para trazar cualquier figura con el robot.</p>
                         <img src="../images/robot-diferencial_profile.jpg">
                     </div>
                 </div>
