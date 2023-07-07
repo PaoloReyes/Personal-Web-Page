@@ -27,11 +27,11 @@ function sort(sort_type) {
         projects_name = projects_name_a_z;
         projects_title = projects_title_a_z;
         projects_date = projects_date_a_z;
-    } else if (sort_type == 'Más Antiguo') {
+    } else if (sort_type == 'Older') {
         projects_name = projects_name_antiguo;
         projects_title = projects_title_antiguo;
         projects_date = projects_date_antiguo;
-    } else if (sort_type == 'Más Reciente') {
+    } else if (sort_type == 'Newer') {
         projects_name = projects_name_reciente;
         projects_title = projects_title_reciente;
         projects_date = projects_date_reciente;

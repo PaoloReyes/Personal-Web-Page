@@ -582,10 +582,10 @@ form .btn2 {
 /* Selector */
 .select-box {
     display: flex;
-    width: 180px;
+    width: 140px;
     flex-direction: column;
     position: relative;
-    left: calc(90% - 180px);
+    left: calc(90% - 140px);
     margin-bottom: -45px;
 }
 
