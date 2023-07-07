@@ -15,10 +15,10 @@ function send_mail() {
             To: [destino, "contactopaoloinspires@gmail.com"],
             From: "contactopaoloinspires@gmail.com",
             Subject: "Propuesta de " + nombre + " - " + topico,
-            Body: "<h4>Este es un correo automático que se le ha enviado tanto a Paolo como a usted.</h4><h4>Paolo pronto lo contactará con una respuesta</h4> <strong>Mensaje: </strong>" + mensaje,
+            Body: "<h4>This is an automated email that has been sent to both Paolo and you.</h4><h4>Paolo will contact you as soon as possible with an answer.</h4> <strong>Your Message: </strong>" + mensaje,
         }).then(function () {
             msg.style.color = "#61b752";
-            msg.innerHTML = "Mensaje Enviado con Éxito";
+            msg.innerHTML = "Message Sent!";
             setTimeout(function(){
                 msg.innerHTML = "";
             }, 5000);
@@ -27,7 +27,7 @@ function send_mail() {
         });
     } else {
         msg.style.color = "#ff004f";
-        msg.innerHTML = "CAPTCHA Incorrecto";
+        msg.innerHTML = "Incorrect CAPTCHA";
         setTimeout(function(){
             msg.innerHTML = "";
         }, 5000);
