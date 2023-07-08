@@ -1,0 +1,60 @@
+<!--28/11/2022-->
+<!--An automated garden that monitors the moisture and temperature levels of 4 plants and waters them when needed. The status of each plant can be accessed from anywhere in the world through the internet.-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Paolo Alfonso Reyes Ramírez tecnológico de monterrey Toluca huerto autónomo plantas proyecto tarea">
+        <meta name="author" content="Paolo Reyes">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../images/icon.ico">
+        <title>IOT Vegetable patch</title>
+        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header-subpage">
+        </div>
+        <div id="De_Que_Trata">
+            <div class="container-subpage">
+                <div class="first-section-subpage">
+                    <h1 class="subtitle">What is it about?</h1>
+                    <div class="description">
+                        <img src="../images/iot-vegetable-patch_profile.jpg">
+                        <p>As part of my "Internet of Things" course in the third semester of university, I had to create a project to automate a garden with 4 different plants. The idea was to monitor the moisture and temperature of each plant using an ESP32 microcontroller and communicate this data via MQTT (a Wi-Fi data communication protocol) to a Raspberry Pi 4. The Raspberry Pi would act as a local server, allowing access from any device to a webpage that synthesized all the current information of the plants and stored a history of past states every minute using a relational database like MySQL. In addition to monitoring, an automatic watering system with a water pump was implemented to water each plant when the moisture level dropped below a certain threshold, and a fan would activate when the temperature was too high.</p><br>
+                        <p>The project was carried out by a team of 5 people. My role in the project was project management and task delegation to two sub-teams: the "Circuit Team" and the "Software Team." As the team member with the most experience and knowledge of the project, I took the lead in guiding the team through each stage of the project. My main responsibility was developing the C++ programs for the ESP32 microcontrollers.</p><br>
+                        <p>The codes for the entire project can be found in my <a href="https://github.com/PaoloReyes/iot-vegetable-patch" target="_blank">GitHub repository.</a>.</p>
+                        <img src="../images/iot-vegetable-patch_profile.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div id="ejemplos">
+            <div class="container">
+                <h1 class="subtitle">Evidence</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="../images/iot-vegetable-patch_1.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="../images/iot-vegetable-patch_2.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="../images/iot-vegetable-patch_3.jpg">
+                    </div>
+                    <div class="work">
+                        <video autoplay muted loop playsinline>
+                            <source src="../images/iot-vegetable-patch_4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="copyright">
+            <p id="footer-text"></p>
+        </div>
+        <script src="../js/year.js"></script>
+        <script src="../js/backpage.js"></script>
+    </body>
+</html>

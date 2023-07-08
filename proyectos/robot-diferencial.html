@@ -1,5 +1,5 @@
 <!--15/12/2020-->
-<!--Un robot muy básico usado para estudiar conceptos de control y seguimiento de trayectorías.-->
+<!--A very basic robot used to study concepts of control and trajectory tracking.-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -10,7 +10,7 @@
         <meta name="author" content="Paolo Reyes">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" href="../images/icon.ico">
-        <title>Robot Diferencial</title>
+        <title>Differential Robot</title>
         <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -19,12 +19,12 @@
         <div id="De_Que_Trata">
             <div class="container-subpage">
                 <div class="first-section-subpage">
-                    <h1 class="subtitle">¿De que trata?</h1>
+                    <h1 class="subtitle">What is it about?</h1>
                     <div class="description">
                         <img src="../images/robot-diferencial_profile.jpg">
-                        <p>Este fue un robot que construí en pandemia para aprender conceptos de contol y seguimiento de trayectorias, mecanicamente es un robot muy sencillo ya que solo consiste de dos motores y una rueda loca para navegar por el espacio por medio de 4 únicos movimientos (Avanzar, Retroceder, Rotar en sentido de las manecillas del reloj y Rotar en el sentido opuesto a las manecillas del reloj), incluso podría decir que este es el robot más básico que cualquier persona que se introduce por primera vez a la robótica tiene acceso.</p><br>
-                        <p>La diferencia entre un robot muy básico y lo que yo hice es inmensa, ya que este solo sirvió como estructura pero el verdadero proyecto tenía más que ver con matemáticas y programación que directamente con el robot.</p><br>
-                        <p>La idea era colocar encoders en las ruedas del robot para determinar la velocidad angular de cada llanta en cada ciclo de ejecución del código, con este dato usar el método de integración numérica de euler debido al poco poder de procesamiento que tiene un arduino uno para obtener una aproximación a la posición relativa desde el inicio del robot y poder corregir el error en la posición para una trayectoria dada en el tiempo, de esa forma solo me hacía falta dar un vector con [la velocidad angular, la velocidad lineal, y el tiempo de duración de esa configuración] para trazar una curva en el tiempo, posteriormente podía mezclar estos vectores para trazar cualquier figura con el robot.</p>
+                        <p>This was a robot that I built during the pandemic to learn concepts of control and trajectory tracking. Mechanically, it is a very simple robot as it only consists of two motors and a caster wheel to navigate through space using only 4 basic movements (Forward, Backward, Clockwise Rotation, and Counterclockwise Rotation). It could even be said that this is the most basic robot that anyone who is new to robotics has access to.</p><br>
+                        <p>The difference between a very basic robot and what I created is immense because this robot served as a structure, but the real project was more about mathematics and programming rather than the robot itself.</p><br>
+                        <p>The idea was to place encoders on the robot's wheels to determine the angular velocity of each wheel in each execution cycle of the code. With this data, I used the numerical integration method of Euler, due to the limited processing power of an Arduino Uno, to obtain an approximation of the relative position from the start of the robot. This allowed me to correct position errors for a given trajectory over time. In this way, I only needed to provide a vector with the angular velocity, linear velocity, and duration of that configuration to trace a curve over time. Furthermore, I could combine these vectors to trace any desired shape with the robot.</p>
                         <img src="../images/robot-diferencial_profile.jpg">
                     </div>
                 </div>
@@ -32,7 +32,7 @@
         </div>
         <div id="ejemplos"> 
             <div class="container">
-                <h1 class="subtitle">Evidencias</h1>
+                <h1 class="subtitle">Evidence</h1>
                 <div class="work-list">
                     <div class="work">
                         <img src="../images/robot-diferencial_1.jpg">
