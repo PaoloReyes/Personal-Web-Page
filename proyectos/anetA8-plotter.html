@@ -1,5 +1,5 @@
 <!--20/06/2021-->
-<!--Este proyecto busca aprovechar el mecanismo existente de una impresora 3D para darle otro enfoque y usarlo como plotter CNC y dibujar a lápiz cualquier figura que se desee.-->
+<!--This project seeks to take advantage of the existing mechanism of a 3D printer to give it another approach and use it as a CNC plotter and draw any figure you want with a pencil.-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -19,10 +19,10 @@
         <div id="De_Que_Trata">
             <div class="container-subpage">
                 <div class="first-section-subpage">
-                    <h1 class="subtitle">¿De que trata?</h1>
+                    <h1 class="subtitle">What is it about?</h1>
                     <div class="description">
                         <img src="../images/anetA8-plotter_profile.jpg">
-                        <p>Una impresora 3D es un dispositivo que entra en la categoría de CNC que viene de las siglas en inglés de "Computer Numeric Control" o "Control Numérico por Computadora" en español, estas máquinas CNC existen en muchos tipos pero en una de sus configuraciones más importantes se tiene un sistema capaz de mover en el eje 'x', 'y' y 'z' una carga a lo largo de una superficie bien delimitada de 4 lados.</p><br><p>Con esto en mente, entonces una imprsora 3D es un CNC que como carga tiene un extrusor que derrite plástico y permite formar piezas en 3 dimensiones, pero bajo esta misma premisa, si ponemos un lápiz como carga podríamos dibujar cualquier cosa en una superficie bidimensional.</p><br><p>Esta fue la idea bajo la que diseñé un mecanismo que se adhiere a la carga del CNC y en el cual puedes colocar lápices, plumas y plumones, estos son suspendidos por una serie de resortes lo que permite tener una tolerancia frente a imperfecciones en la cama para que el lápiz siempre toque la superficie y garantizar que pinta el 100% de las veces.</p><br><p>Para su operación basta con generar un códido G al igual que se hace con impresoras 3D pero limitarlo a solo una capa de altura, esto generará una única pasada sobre la superficie grabando la figura completamente, dependiendo del elemento con el que se pinte es probable que se necesiten dar más de una pasada.</p><br><p>Finalmente para asegurar que el dibujo saldrá sin imperfecciones debemos hacer que cuando la carga del CNC viaje de un punto a otro se levante el eje 'z' para evitar pintar en lugares incorrectos, esta configuración se puede hacer desde el slicer (programa para generar el código).</p><br><p>El proceso entero de construcción lo documenté en mi canal de youtube y se puede acceder a él desde el siguiente <a href="https://www.youtube.com/watch?v=VWFGBCQYf1Y"  target="_blank">enlace</a>.</p>
+                        <p>A 3D printer is a device that falls under the category of CNC, which stands for "Computer Numeric Control" or "Control Numérico por Computadora" in Spanish. CNC machines exist in various types, but in one of their significant configurations, they have a system capable of moving a load along a well-defined surface on four sides in the 'x', 'y', and 'z' axes. With this in mind, a 3D printer is a CNC machine where the load is an extruder that melts plastic and allows for the creation of three-dimensional objects. However, following the same principle, if we replace the extruder with a pen, we could draw anything on a two-dimensional surface.</p><br><p>That was the idea behind which I designed a mechanism that attaches to the load of the CNC machine, allowing you to place pencils, pens, and markers. These writing tools are suspended by a series of springs, which provide tolerance for any imperfections on the surface. This ensures that the pen always makes contact with the surface and guarantees consistent and accurate drawing or writing every time.</p><br><p>For its operation, it is sufficient to generate a G-code, similar to what is done with 3D printers, but limiting it to only one layer in height. This will result in a single pass over the surface, creating the complete figure. Depending on the drawing tool used, it may be necessary to make multiple passes to ensure proper coverage and visibility.</p><br><p>Finally, to ensure that the drawing comes out without imperfections, we need to raise the 'z' axis of the CNC when the load travels from one point to another. This prevents unwanted marks or lines in incorrect places. This configuration can be set up in the slicer software, which is used to generate the G-code for the CNC machine. By adjusting the settings in the slicer, we can control the movements of the 'z' axis and ensure accurate and clean drawings.</p><br><p>The entire construction process has been documented on my YouTube channel, and you can access it through the following <a href="https://www.youtube.com/watch?v=VWFGBCQYf1Y"  target="_blank">link</a>.</p>
                         <img src="../images/anetA8-plotter_profile.jpg">
                     </div>
                 </div>
@@ -30,7 +30,7 @@
         </div>
         <div id="ejemplos">
             <div class="container">
-                <h1 class="subtitle">Evidencias</h1>
+                <h1 class="subtitle">Evidence</h1>
                 <div class="work-list">
                     <div class="work">
                         <video autoplay muted loop playsinline>
