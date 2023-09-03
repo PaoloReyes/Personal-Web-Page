@@ -2,7 +2,7 @@ import os
 import re
 import datetime
 
-directory = "d:/Proyectos/Personal WebPage/proyectos/"
+directory = "d:/Proyectos/Personal WebPage/projects/"
 
 projects = {}
 for filename in os.listdir(directory):
